@@ -52,9 +52,9 @@ public class TestMain {
 
     @Test
     public void light(){
-        String start = "C...R............G......";
+        String start = "C.G.";
         String end = "....O............R......";
-        assertEquals(end, Main.trafficLights(start,11));
+        assertEquals(end, Main.trafficLights(start,10));
     }
 
 
