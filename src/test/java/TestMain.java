@@ -30,7 +30,7 @@ public class TestMain {
 //            fail(String.format("A difference was detected at index %d", errIdx));
 //        }
 //    }
-
+//
 //    @Test
 //    public void example() {
 //        int n = 10;
@@ -50,11 +50,26 @@ public class TestMain {
 //        doTest(sim[0], sim, n);
 //    }
 
+
     @Test
     public void light(){
-        String start = "C.G.";
-        String end = "....O............R......";
-        assertEquals(end, Main.trafficLights(start,10));
+        String start = "C..R..G";
+        String end = "....O............R";
+        assertEquals(end, Main.trafficLights(start,20));
+    }
+
+    @Test
+    public void light2(){
+        String start = "C..R.G...";
+        String end = "....O............R";
+        assertEquals(end, Main.trafficLights(start,20));
+    }
+
+    @Test
+    public void light3(){
+        String start = "C..";
+        String end = "....O............R";
+        assertEquals(end, Main.trafficLights(start,20));
     }
 
 
